@@ -7,7 +7,7 @@ RUN apt-get install -y --no-install-recommends \
 RUN curl -sL https://deb.nodesource.com/setup_current.x | bash - && \
     apt-get install -y nodejs && \
     npm i -g npm
-RUN git clone -b Zee-Userbot https://github.com/Kykoubot/Zee-Userbot /home/Zee-Userbot/ \
+RUN git clone -b Zee-Userbot https://github.com/skyeex/Zee-Userbot /home/Zee-Userbot/ \
     && chmod 777 /home/Zee-Userbot \
     && mkdir /home/Zee-Userbot/bin/
 WORKDIR /home/Zee-Userbot/
