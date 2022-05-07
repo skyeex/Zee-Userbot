@@ -138,7 +138,7 @@ async def _(event):
                 stream_type=StreamType().local_stream,
             )
             await Man.edit(
-                f"❏ **Berhasil Join Ke Obrolan Suara**\n└ **Chat ID:** `{chat_id}`"
+                f"❏ **berhasil join ke obrolan suara ya ngentot**\n└ **Chat ID:** `{chat_id}`"
             )
         except AlreadyJoinedError:
             return await edit_delete(
