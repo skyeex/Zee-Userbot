@@ -138,11 +138,11 @@ async def _(event):
                 stream_type=StreamType().local_stream,
             )
             await Man.edit(
-                f"❏ **berhasil join ke obrolan suara ya ngentot**\n└ **Chat ID:** `{chat_id}`"
+                f"❏ **berhasil join ke obrolan suara ya ngentot**\n└ **chat ID:** `{chat_id}`"
             )
         except AlreadyJoinedError:
             return await edit_delete(
-                Man, "**INFO:** `akun anda sudah berada di obrolan suara`", 45
+                Man, "**INFO:** `akun anda sudah berada di obrolan suara goblok`", 45
             )
         except Exception as e:
             return await Man.edit(f"**INFO:** `{e}`")
@@ -165,7 +165,7 @@ async def vc_end(event):
             await call_py.leave_group_call(chat_id)
             await edit_delete(
                 Man,
-                f"❏ **Berhasil Turun dari Obrolan Suara**\n└ **Chat ID:** `{chat_id}`",
+                f"❏ **akun berhasil turun dari obrolan suara**\n└ **chat ID:** `{chat_id}`",
             )
         except Exception as e:
             return await Man.edit(f"**INFO:** `{e}`")
