@@ -27,9 +27,9 @@ async def help(event):
             string += f"`\t\t\t{ICON_HELP}\t\t\t"
         await edit_or_reply(
             event,
-            f"**daftar perintah untuk [Zee-Userbot](https://github.com/kykoubot/Zee-Userbot):**\n"
-            f"**✦ Jumlah** `{len(CMD_HELP)}` **Modules**\n"
-            f"**✦ Owner:** [{user.first_name}](tg://user?id={user.id})\n\n"
+            f"**-daftar perintah untuk [Zee-Userbot](https://github.com/kykoubot/Zee-Userbot):**\n"
+            f"**-jumlah** `{len(CMD_HELP)}` **modules**\n"
+            f"**-owner:** [{user.first_name}](tg://user?id={user.id})\n\n"
             f"{ICON_HELP}   {string}"
             f"\n\nSupport @{CHANNEL}",
         )
