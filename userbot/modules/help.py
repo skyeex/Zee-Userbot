@@ -18,7 +18,7 @@ async def help(event):
         if args in CMD_HELP:
             await edit_or_reply(event, f"{CMD_HELP[args]}\n\n© {ch}")
         else:
-            await edit_delete(event, f"`{args}` **Bukan Nama Modul yang Valid.**")
+            await edit_delete(event, f"`{args}` **gaada nama modul ini goblok.**")
     else:
         user = await event.client.get_me()
         string = ""
@@ -27,7 +27,7 @@ async def help(event):
             string += f"`\t\t\t{ICON_HELP}\t\t\t"
         await edit_or_reply(
             event,
-            f"**✦ Daftar Perintah Untuk [Zee-Userbot](https://github.com/kykoubot/Zee-Userbot):**\n"
+            f"**daftar perintah untuk [Zee-Userbot](https://github.com/kykoubot/Zee-Userbot):**\n"
             f"**✦ Jumlah** `{len(CMD_HELP)}` **Modules**\n"
             f"**✦ Owner:** [{user.first_name}](tg://user?id={user.id})\n\n"
             f"{ICON_HELP}   {string}"
