@@ -399,7 +399,7 @@ async def _(event):
 
 @man_cmd(pattern=r"terkadang(?: |$)(.*)")
 async def _(event):
-    typew = await edit_or_reply(event, "`Terkadang`")
+    typew = await edit_or_reply(event, "`terkadang`")
     sleep(1)
     await typew.edit("`mencintai seseorang`")
     sleep(1)
