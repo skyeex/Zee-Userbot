@@ -24,11 +24,11 @@ async def _(event):
         await event.client.send_file(
             event.chat_id,
             file=random.choice(asupannya),
-            caption=f"Nih kak asupannya [{owner}](tg://user?id={aing.id})",
+            caption=f"nih mas asupannya [{owner}](tg://user?id={aing.id})",
         )
         await event.delete()
     except Exception:
-        await event.edit("**Maaf tod tidak bisa menemukan video asupan.**")
+        await event.edit("**maaf mas tidak bisa menemukan video asupan.**")
 
 
 CMD_HELP.update(
